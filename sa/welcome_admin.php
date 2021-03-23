@@ -188,6 +188,27 @@
                                         ?>
                                     <a href="edit_page.php?id=<?php echo $row['user_id']; ?>"
                                         class="btn btn-warning">แก้ไข</a>
+
+                                    <button type="button" class="btn btn-danger"
+                                        data-toggle="modal" data-target="#logoutModal">ลบผู้พักอาศัย</button>
+                                    <div class="modal fade" id="logoutModal" role="dialog">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">ยืนยันการลบข้อมูล</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>คุณต้องการลบบัญชี <u><?php echo $row['name']; ?></u> ใช่หรือไม่</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="delete_user.php?id=<?php echo $row['user_id']; ?>"
+                                                        class="btn btn-danger">ลบผู้พักอาศัย</a>
+                                                    <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">ยกเลิก</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <?php
                                     }
                                     
