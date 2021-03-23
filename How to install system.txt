@@ -1,0 +1,8 @@
+How to install project.
+********************************************
+1. Install XAMPP on your computer.
+2. Create table sa_project in phpmyadmin.
+2. Import database to sa_project table.
+3. Extract the PERMSUB.rar  files in htdocs folder on your install xampp.
+
+Create All By, Mr.Thanapon Visedsang No.3
